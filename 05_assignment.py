@@ -28,7 +28,8 @@ def exercise01():
     '''
 
     # ------ Place code below here \/ \/ \/ ------
-    
+
+    df = pd.DataFrame(np.random.randint(0,10, size=(3,4)))
 
     # ------ Place code above here /\ /\ /\ ------
 
