@@ -40,6 +40,7 @@ def exercise02(a):
 
     # ------ Place code below here \/ \/ \/ ------
     
+    array = np.array(a)
     
     # ------ Place code above here /\ /\ /\ ------
 
@@ -50,6 +51,7 @@ def exercise03(a):
 
     # ------ Place code below here \/ \/ \/ ------
     
+    sum = np.sum(a)
 
     # ------ Place code above here /\ /\ /\ ------
     return sum
@@ -59,6 +61,7 @@ def exercise04(a):
 
     # ------ Place code below here \/ \/ \/ ------
     
+    sum = np.sum(a[1])
 
     # ------ Place code above here /\ /\ /\ ------
     return sum
@@ -68,6 +71,7 @@ def exercise05(n):
 
     # ------ Place code below here \/ \/ \/ ------
     
+    zeros = np.zeros(shape=(n, n))
 
     # ------ Place code above here /\ /\ /\ ------
     return zeros
@@ -77,6 +81,7 @@ def exercise06(n):
 
     # ------ Place code below here \/ \/ \/ ------
     
+    ones = np.ones(shape=(n, n))
 
     # ------ Place code above here /\ /\ /\ ------
     return ones
@@ -87,6 +92,7 @@ def exercise07(sd,m,s):
 
     # ------ Place code below here \/ \/ \/ ------
     
+    random_numbers = np.random.normal(m, sd, s)
     
     # ------ Place code above here /\ /\ /\ ------
     return random_numbers
