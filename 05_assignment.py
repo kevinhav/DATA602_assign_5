@@ -143,7 +143,9 @@ def exercise11(n):
     """
     # ------ Place code below here \/ \/ \/ ------
     array_1d = np.arange(n)
-    array_reshaped = array_1d.reshape((3, (3)))
+    array_reshaped = array_1d.reshape(
+        (3, int(n / 3))
+    )  # n/3 doesn't work for all arguments
     # ------ Place code above here /\ /\ /\ ------
     return array_1d, array_reshaped
 
@@ -154,7 +156,7 @@ def exercise12(n):
     A checkerboard matrix is a matrix with alternating 1s and 0s across rows and columns with the top left value equal to 1
     """
     # ------ Place code below here \/ \/ \/ ------
-    checkerboard_matrix = np.tile(np.array([[1, 0], [0, 1]]), (2 * n, 2 * n))
+    checkerboard_matrix = np.tile(np.array([[1, 0], [0, 1]]), (n, n))
 
     # ------ Place code above here /\ /\ /\ ------
 
