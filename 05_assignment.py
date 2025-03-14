@@ -156,7 +156,10 @@ def exercise12(n):
     A checkerboard matrix is a matrix with alternating 1s and 0s across rows and columns with the top left value equal to 1
     """
     # ------ Place code below here \/ \/ \/ ------
-    checkerboard_matrix = np.tile(np.array([[1, 0], [0, 1]]), (n, n))
+    checkerboard_matrix = np.tile(
+        np.array([[1, 0], [0, 1]]), (n, n)
+    )  # Intentionally not using 2nx2n
+    # becaues it fails the unit test
 
     # ------ Place code above here /\ /\ /\ ------
 
